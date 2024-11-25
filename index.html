@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <script src="js/functions.js">
+    </script>
+  </head>
+  <body>
+    
+    <div class="container">
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">First number:</h5>
+            </div>
+            <div class="column">
+                <input class="input is-success is-rounded" type="text" id="num1">
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Second number:</h5>
+            </div>
+            <div class="column">
+                <input class="input is-success is-rounded" type="text" id="num2">
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+            </div>
+            <div class="columns m-1 p-1">
+                <div class="column">
+                    <div class='button is-primary is-outlined' onclick="calculate('Add')">Add</div>
+                    <div class='button is-primary is-outlined' onclick="calculate('Subtract')">Subtract</div>
+                    <div class='button is-primary is-outlined' onclick="calculate('Multiply')">Multiply</div>
+                    <div class='button is-primary is-outlined' onclick="calculate('Divide')">Divide</div>
+                    <div class='button is-danger is-outlined' onclick="clearFields()">Clear</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns m-1 p-1">
+            <div class="column is-one-quarter">
+                <h5 class="title is-5">Result:</h5>
+            </div>
+            <div class="column">
+                <textarea class="textarea" rows="1" id="output" style="resize:none" disabled></textarea>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <strong>Vanilla JavaScript Calculator</strong>
+        </div>
+    </footer>
+  </body>
+</html>
